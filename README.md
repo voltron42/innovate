@@ -6,7 +6,7 @@ Go's mascot, designed by Renée French.
 
 History
 ------
-Go originated as an experiment by Robert Griesemer, Rob Pike and Ken Thompson at Google, to design a new systems programming language, with the following desiderata; the new language was to[16]
+Go originated as an experiment by Robert Griesemer, Rob Pike and Ken Thompson at Google, to design a new systems programming language, with the following desiderata; the new language was to
 
 * be statically typed, scalable to large systems (as Java and C++);
 * be "light on the page" (like dynamic languages);
@@ -19,25 +19,25 @@ Notable Users
 
 Some notable open-source applications in Go include:
 
-* Docker, a set of tools for deploying Linux containers
-* Doozer, a lock service by managed hosting provider Heroku
-* Juju, a service orchestration tool by Canonical, packagers of Ubuntu Linux
-* Syncthing, an open-source file synchronization client/server application
-* Packer, a tool for creating identical machine images for multiple platforms from a single source configuration
+* ***Docker***, a set of tools for deploying Linux containers
+* ***Doozer***, a lock service by managed hosting provider Heroku
+* ***Juju***, a service orchestration tool by Canonical, packagers of Ubuntu Linux
+* ***Syncthing***, an open-source file synchronization client/server application
+* ***Packer***, a tool for creating identical machine images for multiple platforms from a single source configuration
 
 Other companies and sites using Go (generally together with other languages, not exclusively) include:
 
-* Google, for many projects, notably including download server dl.google.com
-* Dropbox, migrated some of their critical components from Python to Go
-* CloudFlare, for their delta-coding proxy Railgun, their distributed DNS service, as well as tools for cryptography, logging, stream processing, and accessing SPDY sites.
-* SoundCloud, for "dozens of systems"
-* Splice, for the entire backend (API and parsers) of their online music collaboration platform.
-* Cloud Foundry, a platform as a service
-* MongoDB, tools for administering MongoDB instances
-* Chango, a programmatic advertising company uses Go in its real-time bidding systems.
-* SendGrid, a Boulder, Colorado-based transactional email delivery and management service.
-* Plug.dj, an interactive online social music streaming website.
-* ThoughtWorks, some tools and applications around continuous delivery and instant messages.
+* ***Google***, for many projects, notably including download server dl.google.com
+* ***Dropbox***, migrated some of their critical components from Python to Go
+* ***CloudFlare***, for their delta-coding proxy Railgun, their distributed DNS service, as well as tools for cryptography, logging, stream processing, and accessing SPDY sites.
+* ***SoundCloud***, for "dozens of systems"
+* ***Splice***, for the entire backend (API and parsers) of their online music collaboration platform.
+* ***Cloud Foundry***, a platform as a service
+* ***MongoDB***, tools for administering MongoDB instances
+* ***Chango***, a programmatic advertising company uses Go in its real-time bidding systems.
+* ***SendGrid***, a Boulder, Colorado-based transactional email delivery and management service.
+* ***Plug.dj***, an interactive online social music streaming website.
+* ***ThoughtWorks***, some tools and applications around continuous delivery and instant messages.
 
 Language Tools
 --------------
