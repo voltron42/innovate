@@ -5,25 +5,30 @@ import (
 	"time"
 )
 
-func readword(ch chan string) {
-	fmt.Println("Type a word,  then hit Enter.")
-	var word string
-	fmt.Scanf("%s", &word)
-	ch <- word
-}
-func timeout(t chan bool) {
-	time.Sleep(5 * time.Second)
-	t <- true
-}
 func main() {
+
 	t := make(chan bool)
 	go timeout(t)
+
 	ch := make(chan string)
 	go readword(ch)
+
 	select {
 	case word := <-ch:
 		fmt.Println("Received", word)
 	case <-t:
 		fmt.Println("Timeout.")
 	}
+}
+
+func timeout(t chan bool) {
+	time.Sleep(5 * time.Second)
+	t <- true
+}
+
+func readword(ch chan string) {
+	fmt.Println("Type a word,  then hit Enter.")
+	var word string
+	fmt.Scanf("%s", &word)
+	ch <- word
 }
