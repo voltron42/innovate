@@ -7,11 +7,12 @@ import (
 
 type Routing interface {
 	Path() string
+	Method() Method
 	Handler(w http.ResponseWriter, req *http.Request)
 }
 
 func ApplyRoutings(r *mux.Router, routings ...Routing) {
 	for _, routing := range routings {
-		r.HandleFunc(routing.Path(), routing.Handler)
+		r.Path(routing.Path()).Methods(routing.Method().String()).HandlerFunc(routing.Handler)
 	}
 }

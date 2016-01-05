@@ -6,9 +6,11 @@ import (
 )
 
 func main() {
-	log.Fatal(http.ListenAndServe(":3010",
-		http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
-			w.Write([]byte("Hello World."))
-		}),
-	))
+	handler := http.HandlerFunc(hello)
+	err := http.ListenAndServe(":3010",handler)
+	log.Fatal(err)
+}
+
+func hello(w http.ResponseWriter, r *http.Request) {
+	w.Write([]byte("Hello World."))
 }
