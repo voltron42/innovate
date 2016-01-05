@@ -16,7 +16,7 @@ In later interviews, all three of the language designers cited their shared disl
 
 Features
 ------------
-Go was designed with the intent of improving the conciseness, simplicity and safety of C
+Go was designed with the intent of improving the conciseness, simplicity and safety of C. The following is a brief overview of the features which define Go:
 
 * A syntax and environment adopting patterns more common in dynamic languages:
   * Optional concise variable declaration and initialization through type inference
