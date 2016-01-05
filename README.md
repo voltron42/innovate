@@ -14,6 +14,37 @@ Go originated as an experiment by Robert Griesemer, Rob Pike and Ken Thompson at
 
 In later interviews, all three of the language designers cited their shared dislike of C++'s complexity as a reason to design a new language.
 
+Features
+------------
+Go was designed with the intent of improving the conciseness, simplicity and safety of C
+
+* A syntax and environment adopting patterns more common in dynamic languages:
+  * Optional concise variable declaration and initialization through type inference
+    * (`x := 0` not `int x = 0;`).
+  * Fast compilation times.
+  * Remote package management (`go get`: similar to `npm install`) and online package documentation.
+* Distinctive approaches to particular problems:
+  * Built-in concurrency primitives: light-weight processes (goroutines), channels, and the select statement.
+  * An interface system in place of virtual inheritance, and type embedding instead of non-virtual inheritance.
+  * A toolchain that, by default, produces statically linked native binaries without external dependencies.
+* A desire to keep the language specification simple enough to hold in a programmer's head, in part by omitting features common to similar languages (see below)
+
+Omissions
+----------
+The designers of Go deliberately omitted certain features common to other languages, most notably,
+
+* implementation inheritance (sub-/super-class relationship)
+* compile-time generics
+* pointer arithmetic
+* implicit type conversions
+
+Criticisms
+-----------
+Frequent criticisms assert that:
+
+* lack of compile-time generics leads to repetition or excessive dynamic code
+* lack of language extensibility (through, for instance, operator overloading) makes certain tasks more verbose
+
 Notable Users
 ------------
 
@@ -52,37 +83,6 @@ Go includes the same sort of debugging, testing, and code-vetting tools as many 
 * `godoc`, for displaying documentation or serving it via HTTP
 * `gorename`, for renaming variables, functions, and so on in a type-safe way
 * `go generate`, a standard way to invoke code generators
-
-Features
-------------
-Go was designed with the intent of improving the conciseness, simplicity and safety of C
-
-* A syntax and environment adopting patterns more common in dynamic languages:
-  * Optional concise variable declaration and initialization through type inference
-    * (`x := 0` not `int x = 0;`).
-  * Fast compilation times.
-  * Remote package management (`go get`: similar to `npm install`) and online package documentation.
-* Distinctive approaches to particular problems:
-  * Built-in concurrency primitives: light-weight processes (goroutines), channels, and the select statement.
-  * An interface system in place of virtual inheritance, and type embedding instead of non-virtual inheritance.
-  * A toolchain that, by default, produces statically linked native binaries without external dependencies.
-* A desire to keep the language specification simple enough to hold in a programmer's head, in part by omitting features common to similar languages (see below)
-
-Omissions
-----------
-The designers of Go deliberately omitted certain features common to other languages, most notably,
-
-* implementation inheritance (sub-/super-class relationship)
-* compile-time generics
-* pointer arithmetic
-* implicit type conversions
-
-Criticisms
------------
-Frequent criticisms assert that:
-
-* lack of compile-time generics leads to repetition or excessive dynamic code
-* lack of language extensibility (through, for instance, operator overloading) makes certain tasks more verbose
 
 Version History
 ------------
